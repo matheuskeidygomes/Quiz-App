@@ -1,6 +1,6 @@
 # Quiz
 
-Projeto realizado para aprofundar estudos em Javascript, utilizando React.js e TailwindCSS.
+Aplicação web de perguntas (Quiz), realizado com React.js, Tailwind.CSS. Feito para fins de estudo e apronfundamento em Javascript e no framework React.js.
 
 ![Node](https://img.shields.io/badge/Node-v16.14%20(LTS)-brightgreen)
 ![Npm](https://img.shields.io/badge/Npm-v8.3.1-blue)
