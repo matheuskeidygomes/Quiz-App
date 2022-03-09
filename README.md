@@ -50,10 +50,10 @@ aconselhável ter um editor para trabalhar com o código, como o [VSCode](https:
 ```bash
 
 # Clone este repositório
-$ git clone <https://github.com/matheuskeidygomes/Quiz.git>
+$ git clone <https://github.com/matheuskeidygomes/Quiz-App.git>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd Quiz
+$ cd Quiz-App
 
 # Instale as dependências
 $ npm install
