@@ -28,6 +28,13 @@ Aplicação web de perguntas (Quiz), realizado com React.js, Tailwind.CSS. Feito
 - [x] Contabilizar acertos ao responder todas as perguntas.
 - [x] Reiniciar o Quiz após responder todas as perguntas.
 
+# Repositório Online
+
+Acesse clicando no botão abaixo:   
+  
+<a href="https://app-quiz-mk.herokuapp.com/"> 
+    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/> 
+</a>
 
 # Screenshots
 
