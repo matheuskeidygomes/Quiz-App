@@ -1,56 +1,102 @@
 const questions = [
     {
-        questionText: 'Qual idioma falado no Brasil?',
+        questionText: 'Qual o principal risco para os trabalhadores expostos à combustão de diesel?',
         answerOptions: [
-            {answerText: 'Português', isCorrect: true},
-            {answerText: 'Inglês', isCorrect: false},
-            {answerText: 'Francês', isCorrect: false},
-            {answerText: 'Espanhol', isCorrect: false}
+            { answerText: 'Doenças respiratórias', isCorrect: true },
+            { answerText: 'Problemas gastrointestinais', isCorrect: false },
+            { answerText: 'Lesões na pele', isCorrect: false },
+            { answerText: 'Problemas cardíacos', isCorrect: false }
         ]
     },
     {
-        questionText: 'Qual inseto transmite a Doença de Chagas?',
+        questionText: 'Qual a principal fonte de poluição do ar em áreas urbanas?',
         answerOptions: [
-            {answerText: 'Barbeiro', isCorrect: true},
-            {answerText: 'Mosquito', isCorrect: false},
-            {answerText: 'Escorpião', isCorrect: false},
-            {answerText: 'Barata', isCorrect: false}
+            { answerText: 'Cigarros', isCorrect: false },
+            { answerText: 'Veículos automotores', isCorrect: true },
+            { answerText: 'Fábricas e indústrias', isCorrect: false },
+            { answerText: 'Queimadas', isCorrect: false }
         ]
     },
     {
-        questionText: 'Qual idioma falado no México?',
+        questionText: 'Quais os principais componentes tóxicos das fumaças liberadas pelos cigarros?',
         answerOptions: [
-            {answerText: 'Português', isCorrect: false},
-            {answerText: 'Inglês', isCorrect: false},
-            {answerText: 'Francês', isCorrect: false},
-            {answerText: 'Espanhol', isCorrect: true}
+            { answerText: 'Dióxido de carbono e monóxido de carbono', isCorrect: false },
+            { answerText: 'Chumbo e mercúrio', isCorrect: false },
+            { answerText: 'Nicotina e alcatrão', isCorrect: true },
+            { answerText: 'Ozônio e dióxido de enxofre', isCorrect: false }
         ]
     },
     {
-        questionText: 'Qual o nome do primeiro presidente negro dos Estados Unidos?',
+        questionText: 'Em qual ambiente os trabalhadores podem estar expostos a altos níveis de poluição do ar?',
         answerOptions: [
-            {answerText: 'Barack Obama', isCorrect: true},
-            {answerText: 'Osama Bin Laden', isCorrect: false},
-            {answerText: 'Trump', isCorrect: false},
-            {answerText: 'Bolsonaro', isCorrect: false}
+            { answerText: 'Escritórios', isCorrect: false },
+            { answerText: 'Casas de show', isCorrect: true },
+            { answerText: 'Praças públicas', isCorrect: false },
+            { answerText: 'Restaurantes', isCorrect: false }
         ]
     },
     {
-        questionText: 'Qual continente fica localizado o Japão?',
+        questionText: 'Quais os principais sintomas que os trabalhadores expostos à poluição do ar podem apresentar?',
         answerOptions: [
-            {answerText: 'Ásia', isCorrect: true},
-            {answerText: 'Oceania', isCorrect: false},
-            {answerText: 'América', isCorrect: false},
-            {answerText: 'Europa', isCorrect: false}
+            { answerText: 'Dor de cabeça e cansaço', isCorrect: true },
+            { answerText: 'Náuseas e vômitos', isCorrect: false },
+            { answerText: 'Febre e calafrios', isCorrect: false },
+            { answerText: 'Tontura e desmaios', isCorrect: false }
         ]
     },
     {
-        questionText: 'Qual inseto transmite a Dengue?',
+        questionText: 'Quais as principais medidas que os trabalhadores podem adotar para se proteger da poluição do ar?',
         answerOptions: [
-            {answerText: 'Barata', isCorrect: false},
-            {answerText: 'Aedes Egypt', isCorrect: true},
-            {answerText: 'Escorpião', isCorrect: false},
-            {answerText: 'Centopéia', isCorrect: false}
+            { answerText: 'Tomar suplementos vitamínicos e dormir bem', isCorrect: false },
+            { answerText: 'Evitar alimentos gordurosos e praticar exercícios físicos regularmente', isCorrect: false },
+            { answerText: 'Usar máscaras de proteção e lavar as mãos com frequência', isCorrect: true },
+            { answerText: 'Usar roupas leves e beber bastante água', isCorrect: false }
+        ]
+    },
+    {
+        questionText: 'Como se chama o processo de queima de combustíveis fósseis que libera gases tóxicos na atmosfera?',
+        answerOptions: [
+            { answerText: 'Fumaçação', isCorrect: false },
+            { answerText: 'Combustão', isCorrect: true },
+            { answerText: 'Poluição', isCorrect: false },
+            { answerText: 'Emissão', isCorrect: false }
+        ]
+    },
+    {
+        questionText: 'A quais tipos de câncer a exposição prolongada à poluição do ar pode estar associada?',
+        answerOptions: [
+            { answerText: 'Mama e próstata', isCorrect: false },
+            { answerText: 'Bexiga e pulmão', isCorrect: true },
+            { answerText: 'Colo de útero e ovários', isCorrect: false },
+            { answerText: 'Leucemias e linfomas', isCorrect: false }
+        ]
+    },
+    {
+        questionText: 'Cigarros e outros produtos de tabaco são uma fonte comum de poluição do ar?',
+        answerOptions: [
+            { answerText: 'Verdadeiro', isCorrect: false },
+            { answerText: 'Falso', isCorrect: true },
+        ]
+    },
+    {
+        questionText: 'A poluição do ar é causada apenas por veículos automotores?',
+        answerOptions: [
+            { answerText: 'Verdadeiro', isCorrect: true },
+            { answerText: 'Falso', isCorrect: false },
+        ]
+    },
+    {
+        questionText: 'A poluição do ar não é um problema em ambientes internos, boates e casas noturnas?',
+        answerOptions: [
+            { answerText: 'Verdadeiro', isCorrect: false },
+            { answerText: 'Falso', isCorrect: true },
+        ]
+    },
+    {
+        questionText: 'Usar máscaras de proteção é uma forma eficaz de reduzir a exposição à poluição do ar?',
+        answerOptions: [
+            { answerText: 'Verdadeiro', isCorrect: true },
+            { answerText: 'Falso', isCorrect: false },
         ]
     },
 ];
