@@ -24,7 +24,7 @@ export default function Home() {
         }
         else {
             WrongAudio.play();
-            context.changeSick();
+            context.changeSmoke();
         }
 
         if (nextQuestion < questions.length) setCurrentQuestion(nextQuestion);
@@ -36,10 +36,10 @@ export default function Home() {
     }
 
     return <>
-        <div className="flex flex-col h-screen justify-center items-center bg-gray-800">
-            <div className="border-2 border-black rounded-xl m-5 sm:max-w-full md:max-w-md lg:max-w-lg">
+        <div className="flex flex-col h-screen justify-center items-center bg-div">
+            <div className="border-2 border-black rounded-xl m-5 sm:max-w-full md:max-w-md lg:max-w-xl">
                 {showScore ?
-                    <Score score={score} onClick={() => handleRestart()} image={context.sick} smoke={context.smoke} />
+                    <Score score={score} onClick={() => handleRestart()} smoke={context.smoke} />
                     :
                     <Question currentQuestion={currentQuestion} onClick={(isCorrect) => handleAnswer(isCorrect)} image={context.sick} smoke={context.smoke} />
                 }

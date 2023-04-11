@@ -9,8 +9,19 @@ export default function Score(props) {
     const halfQuestions = +questions.length / 2;
     const badScore = props.score < halfQuestions;
 
-    if(badScore) new Audio(LoseSong).play();
+    if (badScore) new Audio(LoseSong).play();
     else new Audio(VictorySong).play();
+
+    function smokeContainer(smokes) {
+        const smokeArray = new Array(smokes).fill(0);
+        return <>
+          <div className="flex flex-wrap justify-center items-center">
+            {smokeArray.map((smoke, index) => {
+              return <img key={index} src="./assets/smoke.png" className="w-8 md:w-12 smoke-image" alt="smoke" />
+            })}
+          </div>
+        </>
+      }    
 
     return <>
 
@@ -19,9 +30,9 @@ export default function Score(props) {
             <h1 className="font-bold p-3 bg-white border border-gray-400 rounded-xl flex flex-col justify-center items-center">
 
                 <div className="flex flex-row justify-center items-center w-full">
-                    {props.smoke && <img src="./assets/smoke.png" className="w-12 md:w-20 smoke-image" alt="smoke" />}
-                    <img className="w-36 md:w-52" alt="" src={`./assets/${props.image}.gif`} />
-                    {props.smoke && <img src="./assets/smoke.png" className="w-12 md:w-20 smoke-image" alt="smoke" />}
+                    {smokeContainer(props.smoke)}
+                    <img className="w-36 md:w-52" alt="" src={`./assets/emoji.gif`} />
+                    {smokeContainer(props.smoke)}
                 </div>
 
                 {!badScore ?
@@ -32,7 +43,7 @@ export default function Score(props) {
 
             </h1>
 
-            <button className="transition hover:scale-110 font-bold text-white p-3 rounded-xl mt-5 border border-gray-800 bg-gradient-to-r from-indigo-500 to-purple-800" onClick={() => props.onClick()}> Reiniciar </button>
+            <button className="transition hover:scale-110 font-bold text-white p-3 rounded-xl mt-5 border border-black bg-cyan-500" onClick={() => props.onClick()}> Reiniciar </button>
 
         </div>
 

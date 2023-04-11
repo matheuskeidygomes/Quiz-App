@@ -2,10 +2,10 @@ const questions = [
     {
         questionText: 'Qual o principal risco para os trabalhadores expostos à combustão de diesel?',
         answerOptions: [
-            { answerText: 'Doenças respiratórias', isCorrect: true },
+            { answerText: 'Doenças respiratórias e cardiovasculares', isCorrect: true },
             { answerText: 'Problemas gastrointestinais', isCorrect: false },
             { answerText: 'Lesões na pele', isCorrect: false },
-            { answerText: 'Problemas cardíacos', isCorrect: false }
+            { answerText: 'Perda da visão', isCorrect: false }
         ]
     },
     {
@@ -36,12 +36,12 @@ const questions = [
         ]
     },
     {
-        questionText: 'Quais os principais sintomas que os trabalhadores expostos à poluição do ar podem apresentar?',
+        questionText: 'São sintomas que os trabalhadores expostos a poluição do ar podem apresentar, exceto:',
         answerOptions: [
-            { answerText: 'Dor de cabeça e cansaço', isCorrect: true },
+            { answerText: 'Dor de cabeça e cansaço', isCorrect: false },
             { answerText: 'Náuseas e vômitos', isCorrect: false },
-            { answerText: 'Febre e calafrios', isCorrect: false },
-            { answerText: 'Tontura e desmaios', isCorrect: false }
+            { answerText: 'Hipertensão e diabetes', isCorrect: true },
+            { answerText: 'Tontura e insônia', isCorrect: false }
         ]
     },
     {
@@ -49,7 +49,7 @@ const questions = [
         answerOptions: [
             { answerText: 'Tomar suplementos vitamínicos e dormir bem', isCorrect: false },
             { answerText: 'Evitar alimentos gordurosos e praticar exercícios físicos regularmente', isCorrect: false },
-            { answerText: 'Usar máscaras de proteção e lavar as mãos com frequência', isCorrect: true },
+            { answerText: 'Usar proteção ocular e máscaras de proteção respiratória', isCorrect: true },
             { answerText: 'Usar roupas leves e beber bastante água', isCorrect: false }
         ]
     },
@@ -74,15 +74,15 @@ const questions = [
     {
         questionText: 'Cigarros e outros produtos de tabaco são uma fonte comum de poluição do ar?',
         answerOptions: [
-            { answerText: 'Verdadeiro', isCorrect: false },
-            { answerText: 'Falso', isCorrect: true },
+            { answerText: 'Verdadeiro', isCorrect: true },
+            { answerText: 'Falso', isCorrect: false },
         ]
     },
     {
         questionText: 'A poluição do ar é causada apenas por veículos automotores?',
         answerOptions: [
-            { answerText: 'Verdadeiro', isCorrect: true },
-            { answerText: 'Falso', isCorrect: false },
+            { answerText: 'Verdadeiro', isCorrect: false },
+            { answerText: 'Falso', isCorrect: true },
         ]
     },
     {

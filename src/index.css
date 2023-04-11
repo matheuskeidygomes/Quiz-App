@@ -12,6 +12,13 @@
     animation-iteration-count: infinite;
 }
 
+.bg-div {
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @keyframes pulse {
     0% {
         opacity: 1;

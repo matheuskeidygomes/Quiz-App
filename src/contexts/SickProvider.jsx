@@ -5,17 +5,14 @@ export const SickContext = createContext();
 
 export const SickProvider = (props) => {
 
-    const [sick, setSick] = useState(0);
-    const sickStates = ['very healty', 'healthy', 'little sick', 'sick', 'very sick']
-    const sickState = sickStates[sick];
-    const smoke = sick > 3;
+    const [smoke, setSmoke] = useState(0);
 
-    function changeSick() {
-        if (sick < sickStates.length - 1) setSick(sick + 1);
+    function changeSmoke() {
+        if (smoke <= 8) setSmoke(smoke + 1);
     }
 
     return (
-        <SickContext.Provider value={{ sick, setSick, sickState, changeSick, smoke }} >
+        <SickContext.Provider value={{ smoke, changeSmoke }} >
             {props.children}
         </SickContext.Provider>
     );
